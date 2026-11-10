@@ -69,10 +69,10 @@ for layer in range(FIRST_LAYER, n_layers + 1, LAYER_STEP):
     df_pcs = pd.DataFrame({"PC0": coords[:, 0], "PC1": coords[:, 1], "direction": labels})
 
     fig, ax = plt.subplots(figsize=(7, 6))
-    # 2D KDE contours per class, as in the repo's generate_PCA_directions
+    
     sns.kdeplot(data=df_pcs, x="PC0", y="PC1", hue="direction", palette=palette, levels=5, alpha=0.8, common_norm=False, ax=ax)
     sns.scatterplot(data=df_pcs, x="PC0", y="PC1", hue="direction", palette=palette, s=60, alpha=0.7, ax=ax)
-    # kdeplot adds its own legend handles only for contours; rebuild a clean one from the scatter
+    
     handles, texts = ax.get_legend_handles_labels()
     ax.legend(handles[: len(palette)], texts[: len(palette)], title="direction", loc="upper right")
     ax.set_xlabel("PC0")
