@@ -37,7 +37,7 @@ uv run python examples/attention_example.py
 ![Ejemplo de atención](examples/attention_example.gif)
 
 
-### Representaciones internas: [`examples/hidden_example.py`](examples/hidden_example.py)
+### Representaciones internas en Transformers: [`examples/hidden_example.py`](examples/hidden_example.py)
 
 Extrae la representación interna del último token de Qwen2.5-3B-Instruct.
 
@@ -46,4 +46,15 @@ uv run python examples/hidden_example.py
 ```
 
 ![Ejemplo de estados ocultos](examples/hidden_example.gif)
+
+### Representaciones internas en CNNs: [`examples/hook_example.py`](examples/hook_example.py)
+
+Registra `forward hooks` en las capas convolucionales de AlexNet para guardar sus activaciones al pasar imágenes.
+
+```bash
+uv run python examples/hook_example.py
+```
+
+![Ejemplo de hooks](examples/hook_example.png)
+
 
