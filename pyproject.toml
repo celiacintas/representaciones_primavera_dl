@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "adversarial-robustness-toolbox>=1.20.1",
     "grad-cam>=1.5.7",
     "jupyter>=1.1.1",
     "matplotlib>=3.10.9",

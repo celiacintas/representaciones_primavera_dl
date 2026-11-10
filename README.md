@@ -6,6 +6,7 @@ Snippets para visualizar distintas formas de analizar modelos de deep learning:
 - **Cabezas de atención** de TinyLlama con TransformerLens (lenguaje)
 - **Representaciones internas en Transformers** de Qwen2.5-3B proyectados con PCA (lenguaje)
 - **Representaciones internas en CNNs** para guardar activaciones de capas convolucionales de AlexNet (imagenes)
+- **Detección de ataques adversarios con representaciones internas** con subset scanning sobre una CNN entrenada en MNIST (imagenes)
 
 ## Setup
 
@@ -58,4 +59,13 @@ uv run python examples/hook_example.py
 
 ![Ejemplo de hooks](examples/hook_example.png)
 
+### Detección de ataques adversarios: [`examples/global_attacks_example.py`](examples/global_attacks_example.py)
+
+Entrena una CNN pequeña en MNIST, genera ejemplos adversarios con FGSM y usa `SubsetScanningDetector` de [ART](https://github.com/Trusted-AI/adversarial-robustness-toolbox).
+
+```bash
+uv run python examples/global_attacks_example.py
+```
+
+![Ejemplo de ataques adversarios](examples/global_attacks_example.gif)
 
