@@ -4,7 +4,8 @@ Snippets para visualizar distintas formas de analizar modelos de deep learning:
 
 - **Grad-CAM** sobre una ResNet-50 (imagenes)
 - **Cabezas de atención** de TinyLlama con TransformerLens (lenguaje)
-- **Representaciones internas** de Qwen2.5-3B proyectados con PCA (lenguaje)
+- **Representaciones internas en Transformers** de Qwen2.5-3B proyectados con PCA (lenguaje)
+- **Representaciones internas en CNNs** para guardar activaciones de capas convolucionales de AlexNet (imagenes)
 
 ## Setup
 
