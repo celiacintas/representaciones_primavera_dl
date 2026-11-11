@@ -1,7 +1,7 @@
 [project]
 name = "representaciones-primavera-dl"
 version = "0.1.0"
-description = "Add your description here"
+description = "snippets para visualizar distintas formas de analizar modelos de deep learning"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
